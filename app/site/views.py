@@ -113,6 +113,7 @@ def register():
                                        email=form.email.data))
             flash("Registration complete! You will be notified when your request is approved.")
 
+            # expl: if the following lines are commented, approval is needed, using approve_user.py
             user.set_approval()
             send_email("[My Database] User {} approved".format(form.username.data),
                        ADMINS[0],
