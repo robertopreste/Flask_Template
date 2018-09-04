@@ -19,11 +19,11 @@ login = LoginManager(app)
 login.login_view = "site.login"
 mail = Mail(app)
 
-from api.views import res
-from site.views import www
+from app.api.views import res
+from app.site.views import www
 
-from api.views import api
-from api.endpoints.users import ns as user_namespace
+from app.api.views import api
+from app.api.endpoints.users import ns as user_namespace
 
 
 api.add_namespace(user_namespace)
