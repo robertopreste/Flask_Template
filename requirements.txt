@@ -9,3 +9,4 @@ flask-cors
 flask-login
 flask-mail
 sqlalchemy-migrate
+requests
