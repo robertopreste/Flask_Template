@@ -15,7 +15,7 @@ The first time the database is created, the `db_repo` directory is created; it w
 * Create the database: `python db_create.py`  
 * Perform the first migration: `python db_migrate.py`  
 
-For subsequent migrations, only the `python db_migrate.py` is needed.  
+For subsequent migrations, only the `python db_migrate.py` is needed, i.e. after changing data in the database, it is sufficient to call `python db_migrate.py`. The database version will be updated and it will be ready for serving.  
 
 ## Running the DB  
 With the command `python run.py` the database and its web interface will be served on `120.0.0.1:5000`.    
